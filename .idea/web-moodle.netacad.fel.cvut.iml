@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/moodle/comment/classes" isTestSource="false" packagePrefix="core_comment" />
+      <sourceFolder url="file://$MODULE_DIR$/moodle/comment/tests" isTestSource="true" packagePrefix="core_comment" />
+      <sourceFolder url="file://$MODULE_DIR$/moodle/contentbank/classes" isTestSource="false" packagePrefix="core_contentbank" />
+      <sourceFolder url="file://$MODULE_DIR$/moodle/contentbank/contenttype/h5p/classes" isTestSource="false" packagePrefix="contenttype_h5p" />
+      <sourceFolder url="file://$MODULE_DIR$/moodle/contentbank/contenttype/h5p/tests" isTestSource="true" packagePrefix="contenttype_h5p" />
+      <sourceFolder url="file://$MODULE_DIR$/moodle/contentbank/tests" isTestSource="true" packagePrefix="core_contentbank" />
+      <sourceFolder url="file://$MODULE_DIR$/moodle/notes/classes" isTestSource="false" packagePrefix="core_notes" />
+      <sourceFolder url="file://$MODULE_DIR$/moodle/notes/tests" isTestSource="true" packagePrefix="core_notes" />
+      <sourceFolder url="file://$MODULE_DIR$/moodle/user/classes" isTestSource="false" packagePrefix="core_user" />
+      <sourceFolder url="file://$MODULE_DIR$/moodle/user/profile/field/checkbox/classes" isTestSource="false" packagePrefix="profilefield_checkbox" />
+      <sourceFolder url="file://$MODULE_DIR$/moodle/user/profile/field/checkbox/tests" isTestSource="true" packagePrefix="profilefield_checkbox" />
+      <sourceFolder url="file://$MODULE_DIR$/moodle/user/profile/field/datetime/classes" isTestSource="false" packagePrefix="profilefield_datetime" />
+      <sourceFolder url="file://$MODULE_DIR$/moodle/user/profile/field/datetime/tests" isTestSource="true" packagePrefix="profilefield_datetime" />
+      <sourceFolder url="file://$MODULE_DIR$/moodle/user/profile/field/menu/classes" isTestSource="false" packagePrefix="profilefield_menu" />
+      <sourceFolder url="file://$MODULE_DIR$/moodle/user/profile/field/menu/tests" isTestSource="true" packagePrefix="profilefield_menu" />
+      <sourceFolder url="file://$MODULE_DIR$/moodle/user/profile/field/social/classes" isTestSource="false" packagePrefix="profilefield_social" />
+      <sourceFolder url="file://$MODULE_DIR$/moodle/user/profile/field/social/tests" isTestSource="true" packagePrefix="profilefield_social" />
+      <sourceFolder url="file://$MODULE_DIR$/moodle/user/profile/field/text/classes" isTestSource="false" packagePrefix="profilefield_text" />
+      <sourceFolder url="file://$MODULE_DIR$/moodle/user/profile/field/text/tests" isTestSource="true" packagePrefix="profilefield_text" />
+      <sourceFolder url="file://$MODULE_DIR$/moodle/user/profile/field/textarea/classes" isTestSource="false" packagePrefix="profilefield_textarea" />
+      <sourceFolder url="file://$MODULE_DIR$/moodle/user/profile/field/textarea/tests" isTestSource="true" packagePrefix="profilefield_textarea" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
