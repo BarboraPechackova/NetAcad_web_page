@@ -197,7 +197,6 @@ a:focus {
   transition: all 0.3s;
   position: relative;
   border-radius: 5px;
-  transition: all 0.3s;
 }
 .custom_nav-container .navbar-toggler span::before, .custom_nav-container .navbar-toggler span::after {
   content: "";

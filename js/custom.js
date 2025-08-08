@@ -1,50 +1,3 @@
-// to get current year
-function getYear() {
-    var currentDate = new Date();
-    var currentYear = currentDate.getFullYear();
-    document.querySelector("#displayYear").innerHTML = currentYear;
-}
-
-getYear();
-
-// nice select
-$(document).ready(function () {
-    $('select').niceSelect();
-});
-
-// date picker
-$(function () {
-    $("#inputDate").datepicker({
-        autoclose: true,
-        todayHighlight: true
-    }).datepicker('update', new Date());
-});
-
-// // owl carousel slider js
-// $('.team_carousel').owlCarousel({
-//     loop: true,
-//     margin: 15,
-//     dots: true,
-//     autoplay: true,
-//     navText: [
-//         '<i class="fa fa-angle-left" aria-hidden="true"></i>',
-//         '<i class="fa fa-angle-right" aria-hidden="true"></i>'
-//     ],
-//     autoplayHoverPause: true,
-//     responsive: {
-//         0: {
-//             items: 1,
-//             margin: 0
-//         },
-//         576: {
-//             items: 2,
-//         },
-//         992: {
-//             items: 3
-//         }
-//     }
-// })
-
 const translations = {
     cz: {
         home: "Domů",
@@ -69,7 +22,7 @@ const translations = {
         mainPage: "Hlavní stránka",
         mainPage_desc: "Hlavní stránka NetAcad s informacemi o kurzech a aktivitách",
         redirect: "Přesměrovat <i class=\"fa fa-long-arrow-right\"></i>",
-        copyright: "&copy; 2025 Všechna práva vyhrazena <a> NetLAB - NetACAD Centrum síťové a informační bezpečnosti FEL ČVUT</a>"
+        copyright: "&copy; <span id=\"displayYear\"></span> Všechna práva vyhrazena <a> NetLAB - NetACAD Centrum síťové a informační bezpečnosti FEL ČVUT</a>"
     },
     en: {
         home: "Home",
@@ -94,7 +47,7 @@ const translations = {
         mainPage: "Main Page",
         mainPage_desc: "Main NetAcad page with information about courses and activities",
         redirect: "Redirect <i class=\"fa fa-long-arrow-right\"></i>",
-        copyright: "&copy; 2025 All rights reserved <a> NetLAB - NetACAD Center for Network and Information Security at CTU FEE</a>"
+        copyright: "&copy; <span id=\"displayYear\"></span> All rights reserved <a> NetLAB - NetACAD Center for Network and Information Security at CTU FEE</a>"
     }
 };
 
@@ -103,18 +56,6 @@ function setLanguage(lang) {
     localStorage.setItem('lang', lang);
     applyTranslations();
     highlightActiveLang();
-}
-
-
-function applyTranslations() {
-    const lang = localStorage.getItem('lang') || 'cz';
-    const elements = document.querySelectorAll('[data-i18n]');
-    elements.forEach(el => {
-        const key = el.getAttribute('data-i18n');
-        if (translations[lang][key]) {
-            el.innerHTML = translations[lang][key];
-        }
-    });
 }
 
 function highlightActiveLang() {
@@ -133,3 +74,21 @@ document.addEventListener('DOMContentLoaded', () => {
     applyTranslations();
     highlightActiveLang();
 });
+
+
+function applyTranslations() {
+    const lang = localStorage.getItem('lang') || 'cz';
+    const elements = document.querySelectorAll('[data-i18n]');
+    elements.forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (translations[lang][key]) {
+            el.innerHTML = translations[lang][key];
+        }
+    });
+
+    // Set the current year if the element exists
+    const displayYearEl = document.querySelector("#displayYear");
+    if (displayYearEl) {
+        displayYearEl.textContent = new Date().getFullYear();
+    }
+}
