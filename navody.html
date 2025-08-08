@@ -8,12 +8,12 @@
   <!-- Mobile Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <!-- Site Metas -->
-  <link rel="icon" href="images/fevicon.png" type="image/gif" />
+  <link rel="icon" href="favicon.ico" type="image/gif" />
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>Návody pro přiopjení do virtuální laboratoře</title>
+  <title>NetAcad</title>
 
 
   <!-- bootstrap core css -->
@@ -21,6 +21,7 @@
 
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=OpenSans:wght@400;500;700;900&display=swap" rel="stylesheet">
 
   <!-- font awesome style -->
   <link href="css/font-awesome.min.css" rel="stylesheet" />
@@ -29,6 +30,9 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+
+  <script> window.chtlConfig = { chatbotId: "9271479529" } </script>
+  <script async data-id="9271479529" id="chtl-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
 
 </head>
 
@@ -40,7 +44,7 @@
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a class="navbar-brand" href="https://lab.netacad.fel.cvut.cz/">
-            <span>Návody pro systém NetLab</span>
+            <span>NetLab 101 - návod pro práci v prostředí</span>
           </a>
 
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,10 +54,10 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav  ml-auto">
               <li class="nav-item ">
-                <a class="nav-link" href="https://lab.netacad.fel.cvut.cz/">Hlavní stránka <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="index.html">Hlavní stránka <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="https://lab.netacad.fel.cvut.cz/navody.html"> Návody</a>
+                <a class="nav-link" href="navody.html"> Návody</a>
               </li>
 
             </ul>
@@ -73,41 +77,64 @@
         <div class="col-md-6">
           <div class="detail-box">
             <div class="heading_container">
-              <h2>
-                Příručka k používání online NetLabu
+              <h2 class="mb-5">
+                Příručka k používání online NetLAB prostředí
               </h2>
             </div>
             <h3>
-              Připojení
+              Co je to NetLab?
             </h3>
 
             <p>
-              K připojení je potřebné mít založen účet v systému. Každému studentovi budou v AD přiděleny unikátní username a heslo, pomocí nichž se student přihlásí do všech komponentů kromě eve-ng.
+             NetLab je prostředí pro vzdálenou virtualizaci a správu umělých sítí. Nazýváme ji také jako virtuální laboratoř. Primárně dnes slouží jako výukové prostředí pro studenty našich kurzů a našich partnerů. V prostředí experimentovat s tvorbou vlastních sítí a scénářů.
             </p>
+            <h3 class="mt-4">
+              K čemu slouží založení uživatelského účtu?
+            </h3>
+            <p>
+              Abyste mohli využívat všechny služby, které poskytujeme a které jsou navzájem propojené je potřeba u nás mít univerzální účet. Ten slouží k přihlášení do Moodlu, vzdáleného počítač, VPN, Registraci Podu.
+              Na registraci váš odkáže někdo z našeho týmu, či ji dostanete skrze email.
+            </p>
+            <p>
+              Je potřeba počkat na potvrzení o autentizaci, které přijde emailem. Celý následující postup vyžaduje připojení k internetu.
+            </p>
+            <h3 class="mt-4">
+              NLAM - portál pro správu přístupové identity
+            </h3>
+
+            <p class="mb-0">
+              Přes tento portál probíhá vytvoření uživatelského účtu a jeho správa. Lze zde také jednoduše změnit heslo.
+
+            </p>
+            <p class="mt-0 mb-4">
+              <a href="https://access.netacad.fel.cvut.cz/nlam"> NLAM </a>
+            </p>
+
             <h3>
-              Připravený OVA soubor virtuálního stroje
+              Jak se dostanu na portál virtuálních desktopů?
             </h3>
 
-            <p>
-              Pro účely používání a připojování k labu byl pro studenty vytvořen a distribuován ova soubor virtuálního stroje, který je možné importovat do svého virtualizačního nástroje a používat jako
-              primární řešení k připojování a užívání prostředí Netlab. Tento způsob je silně doporučeno využít.
-              Ve virtuálce je na pracovní ploše nastaveno spuštění VPN (VPN_start), webový prohlížeč, který má v záložkách uloženy odkazy na všechny potřebné webové stránky včetně přístupu na jednotlivé pody, a nakonec ikona na ukončení VPN (VPN_stop), která odpojí operační systém od VPN.
-              Uživatel systému má přihlašovací jméno “user” a heslo “user”. Tento uživatel má práva na sudo a žádný jiný uživatel na systému není nakonfigurovaný. Potřebné skripty pro funkčnost odkazů na připojení/odpojení VPN jsou v adresáři /home/user/vpn. Po smazání tohoto adresáře nebudou
-              odkazy na ploše fungovat. Na systému je nainstalován a správně nakonfigurován i integrační balíček pro eve-ng. Není tedy potřebné nic doinstalovávat. Po importu a spuštění systému stačí pouze kliknout na ikonu VPN_start na ploše, vyplnit uživatelské jméno a heslo do VPN->přepnout se do prohlížeče->udělat si rezervaci  a případně v době výuky přímo přistoupit na požadovaný pod a po dokončení práce se odpojit z VPN pomocí ikony VPN_stop.
-
+            <p class="mb-0">
+              Abyste mohli používat naši platformu je potřeba se připojit k vzdálenému počítači skrze naše prostředí.
             </p>
-            <h3>
-              Změna hesla
+            <p class="mt-0">
+              <a href="https://access.netacad.fel.cvut.cz/kasmportal"> KASM Portal </a>
+              <a href="https://moodle.netacad.fel.cvut.cz/moodle"> Moodle NetLAB </a>
+            </p>
+            <p>
+              Zde si vyberte jednu z instancí a přihlaste se pomocí údajů vámi vytvořenými. Následně se ocitnete ve výběrovém prostředí. Jednu z instancí si vyberte a s výběrem aktuální záložka klikněte na spustit relaci. V případě že ji chcete spustit v jiném okně můžete výběrem jiné možnosti.
+            </p>
+
+            <h3 class="mb-0">
+              Videonávod
             </h3>
 
-            <p>
-              Pomocí tlačítka {změna hesla} je možné si po přihlášení stávajícím heslem změnit heslo pro přístup do AD, který zabezpečuje přihlašování do VPN a rezervačního systému.
-              Zadejte zde svůj username, staré heslo a nové heslo. Po změně se prosím odhlaste z VPN a přihlaste novým heslem.
-              V případě komplikací kontaktujte vyučujícího nebo přímo support: support.netacad@itu.fel.cvut.cz.
+            <video  width="850" height="650" controls src="video/UTF-8Tutorial.mp4" type="video/mp4">
+              ERROR: Your browser does not support the video tag. :(
+            </video>
 
-            </p>
             <a href="">
-              Pro získání kompletního návodu kontaktujte support
+              Pro získání kompletního návodu kontaktujte podporu
             </a>
           </div>
         </div>

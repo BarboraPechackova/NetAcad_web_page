@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="cz">
 
 <head>
   <!-- Basic -->
@@ -8,12 +8,12 @@
   <!-- Mobile Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <!-- Site Metas -->
-  <link rel="icon" href="images/fevicon.png" type="image/gif" />
+  <link rel="icon" href="favicon.ico" type="image/gif" />
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>Výpočetní centrum NetAcad</title>
+  <title>NetAcad</title>
 
 
   <!-- bootstrap core css -->
@@ -21,6 +21,7 @@
 
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=OpenSans:wght@400;500;700;900&display=swap" rel="stylesheet">
 
   <!-- font awesome style -->
   <link href="css/font-awesome.min.css" rel="stylesheet" />
@@ -30,208 +31,243 @@
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 
+  <script> window.chtlConfig = { chatbotId: "9271479529" } </script>
+  <script async data-id="9271479529" id="chtl-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
+
 </head>
 
 <body>
 
   <div class="hero_area">
     <!-- header section strats -->
-    <header class="header_section">
-      <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg custom_nav-container ">
-          <a class="navbar-brand" href="index.html">
-            <span>NetLAB - FEL CVUT</span>
-          </a>
+      <!-- Font Awesome CDN (make sure it's included in <head>) -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class=""> </span>
-          </button>
+      <header class="header_section">
+          <div class="container-fluid">
+              <nav class="navbar navbar-expand-lg custom_nav-container">
+                  <a class="navbar-brand d-flex align-items-center">
+                      <img src="favicon.ico" alt="Logo" width="28" height="28" class="mr-2"> <span>NetAcad</span>
+                  </a>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav  ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">Hlavní stránka <span class="sr-only">(current)</span></a>
-              </li>
-            </ul>
-            <div class="quote_btn-container">
-              <form class="form-inline">
-                <button class="btn   nav_search-btn" type="submit">
-                  <i class="fa fa-search" aria-hidden="true"></i>
-                </button>
-              </form>
-              <a href="">
-                <i class="fa fa-phone" aria-hidden="true"></i>
-                <span>
-                  Podpora : support@itu.fel.cvut.cz
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+                          aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
 
-                </span>
-              </a>
-            </div>
+                  <div class="collapse navbar-collapse" id="navbarContent">
+                      <ul class="navbar-nav ml-auto">
+                          <li class="nav-item active">
+                              <a class="nav-link" href="index.html" data-i18n="home">
+                                  <i class="fas fa-home mr-2"></i> Domů
+                              </a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#" data-i18n="courses">
+                                  <i class="https://moodle.netacad.fel.cvut.cz/moodle"></i> Kurzy
+                              </a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="https://access.netacad.fel.cvut.cz/en/login" data-i18n="profile">
+                                  <i class=""></i> Můj profil
+                              </a>
+                          </li>
+
+                          <li class="nav-item">
+                              <a class="nav-link" href="mailto:support@itu.fel.cvut.cz" data-i18n="support">
+                                  <i class="fas fa-headset mr-2"></i> Podpora
+                              </a>
+                          </li>
+                      </ul>
+
+                    <div class="language-switcher ml-3">
+                      <button class="btn btn-sm btn-outline-light" onclick="setLanguage('cz')">CZ</button>
+                      <button class="btn btn-sm btn-outline-light" onclick="setLanguage('en')">EN</button>
+                    </div>
+
+
+                  </div>
+              </nav>
           </div>
-        </nav>
-      </div>
-    </header>
-    <!-- end header section -->
+      </header>
+
+      <!-- end header section -->
     <!-- slider section -->
-    <section class="slider_section ">
-      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="container ">
+      <section class="slider_section">
+          <div class="container">
               <div class="row">
-                <div class="col-md-6">
-                  <div class="detail-box">
-                    <h1>
-                      Výpočetní centrum NETACAD
-
-                    </h1>
-                    <p>
-                      Hlavní stránka pro odkaz na služby poskytovaná Centrem informační a komunikační bezpečnosti FEL CVUT </p>
-                    <div class="btn-box">
-                      <a href="" class="btn-1">
-                        Seznam služeb
-                      </a>
-                      <a href="" class="btn-2">
-                        Kontakty / podpora
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="row">
-                    <div class=" col-lg-10 mx-auto">
-                      <div class="img-box">
-                        <img src="images/slider-img.png" alt="">
+                  <div class="col-md-6">
+                      <div class="detail-box">
+                          <h1 class="display-3 header" data-i18n="title">
+                              NetAcad <br>
+                              FEL ČVUT
+                          </h1>
+                          <p data-i18n="title_desc">
+                              Úvodní stránka s odkazy na servery a služby  <br> Centra informační a komunikační bezpečnosti FEL ČVUT.
+                          </p>
+                          <div class="btn-box" id="section1">
+                              <a href="https://netacad.fel.cvut.cz" class="btn-2" data-i18n="button_1">
+                                  Stránky NetAcad
+                              </a>
+                              <a href="#section2" class="btn-1" data-i18n="button_2">
+                                  Rozcestník služeb
+                              </a>
+                          </div>
                       </div>
-                    </div>
                   </div>
-                </div>
+                  <div class="col-md-6">
+                      <div class="row">
+                          <div class="col-lg-10 mx-auto" id="logo-img-box">
+                              <div class="img-box">
+                                  <img src="images/logo-img.png" alt="logo">
+                              </div>
+                          </div>
+                      </div>
+                  </div>
               </div>
-            </div>
           </div>
-        </div>
-        <div class="carousel_btn-box">
-          <a class="carousel-control-prev" href="#customCarousel1" role="button" data-slide="prev">
-            <i class="fa fa-angle-left" aria-hidden="true"></i>
-            <span class="sr-only">Previous</span>
+          <a href="#section2" class="scroll-down-arrow">
+            <i class="fas fa-chevron-down"></i>
           </a>
-          <a class="carousel-control-next" href="#customCarousel1" role="button" data-slide="next">
-            <i class="fa fa-angle-right" aria-hidden="true"></i>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-      </div>
-    </section>
-    <!-- end slider section -->
+      </section>
+
+      <!-- end slider section -->
   </div>
 
   <!-- service section -->
-
   <section class="service_section layout_padding">
-    <div class="container">
+    <div class="container" id="section2">
       <div class="heading_container heading_center">
-        <h2>
+        <h2 data-i18n="service_title">
           Servery a služby
         </h2>
       </div>
     </div>
-    <div class="container ">
+    <div class="container">
       <div class="row">
-        <div class="col-md-6 col-lg-4">
-          <div class="box ">
-            <div class="img-box">
-              <img src="images/png-transparent-moodle.png" alt="">
-            </div>
-            <div class="detail-box">
-              <h4>
-                Moodle pro výuku
-              </h4>
-              <p>
-                Odkaz na moodle server pro podporu výuky kurzů.
-              </p>
-              <a href="https://moodle.netacad.fel.cvut.cz/moodle">
-                Přesměrovat
-                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="box ">
-            <div class="img-box">
-              <img src="images/s6.png" alt="">
-            </div>
-            <div class="detail-box">
-              <h4>
-                Stránka NetAcad
-              </h4>
-              <p>
-                Hlavní stránka o našich kurzech a aktivitách.
-              </p>
-              <a href="https://netacad.fel.cvut.cz">
-                Přesměrovat
-                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-
-              </a>
-            </div>
-          </div>
-        </div>
-
 
         <div class="col-md-6 col-lg-4">
-          <div class="box ">
-            <div class="img-box">
-              <img src="images/s6.png" alt="">
+          <a href="https://access.netacad.fel.cvut.cz/en/login" class="box-link">
+            <div class="box">
+              <div class="img-box">
+                <i class="fas fa-user-cog fa-2x text-white"></i>
+              </div>
+              <div class="detail-box">
+                <h4 data-i18n="registration">Registrace a správa uživatele</h4>
+                <p data-i18n="registration_desc">NLAM pro vytvoření a správu uživatelského účtu včetně změny hesla</p>
+                <span class="redirect-link" data-i18n="redirect">
+                Přesměrovat <i class="fa fa-long-arrow-right"></i>
+                </span>
+              </div>
             </div>
-            <div class="detail-box">
-              <h4>
-                Návody pro virtuální laboratoř
-              </h4>
-              <p>
-                Dokumentace k obsluze a připojení do systému virtuální laboratoře.
-              </p>
-              <a href="https://lab.netacad.fel.cvut.cz/navody.html">
-                Přesměrovat
-                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-
-              </a>
-            </div>
-          </div>
+          </a>
         </div>
+
+        <div class="col-md-6 col-lg-4">
+          <a href="https://access.netacad.fel.cvut.cz/en/login" class="box-link">
+            <div class="box">
+              <div class="img-box">
+                <i class="fas fa-vials fa-2x text-white"></i>
+              </div>
+              <div class="detail-box">
+                <h4 data-i18n="virtualLab">Virtuální <br> laboratoře</h4>
+                <p data-i18n="virtualLab_desc">Přístup k virtuálním laboratořím NetLab jaký link a jaký popis???</p>
+                <span class="redirect-link" data-i18n="redirect">
+                Přesměrovat <i class="fa fa-long-arrow-right"></i>
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <a href="navody.html" class="box-link">
+            <div class="box">
+              <div class="img-box">
+                <i class="fas fa-book-open fa-2x text-white"></i>
+              </div>
+              <div class="detail-box">
+                <h4 data-i18n="virtualLabGuide">Návod pro Virtuální laboratoře</h4>
+                <p data-i18n="virtualLabGuide_desc">Dokumentace k obsluze a připojení k virtuálním laboratořím</p>
+                <span class="redirect-link" data-i18n="redirect">
+                Přesměrovat <i class="fa fa-long-arrow-right"></i>
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <a href="https://moodle.netacad.fel.cvut.cz/moodle" class="box-link">
+            <div class="box">
+              <div class="img-box">
+                <img src="images/moodle.png" alt="Moodle">
+              </div>
+              <div class="detail-box">
+                <h4 data-i18n="moodle">Výukové materiály</h4>
+                <p data-i18n="moodle_desc">Výukové materiály dostupné na portálu Moodle pro podporu našich kurzů</p>
+                <span class="redirect-link" data-i18n="redirect">
+                Přesměrovat <i class="fa fa-long-arrow-right"></i>
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <a href="https://discord.gg/mCXzd8gn" class="box-link">
+            <div class="box">
+              <div class="img-box">
+                <i class="fab fa-discord fa-2x text-white"></i>
+              </div>
+              <div class="detail-box">
+                <h4 data-i18n="discord">Discord</h4>
+                <p data-i18n="discord_desc">Discord server NetAcad pro komunikaci mezi studenty a lektory</p>
+                <span class="redirect-link" data-i18n="redirect">
+                Přesměrovat <i class="fa fa-long-arrow-right"></i>
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <a href="https://netacad.fel.cvut.cz" class="box-link">
+            <div class="box">
+              <div class="img-box">
+                <i class="fas fa-globe fa-2x text-white"></i>
+              </div>
+              <div class="detail-box">
+                <h4 data-i18n="mainPage">Hlavní stránka</h4>
+                <p data-i18n="mainPage_desc">Hlavní stránka NetAcad s informacemi o kurzech a aktivitách</p>
+                <span class="redirect-link" data-i18n="redirect">
+                Přesměrovat <i class="fa fa-long-arrow-right"></i>
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- end service section -->
 
-  <!-- about section -->
-
-
-  <!-- contact section -->
-
-
-  <!-- end contact section -->
-
-  <!-- info section -->
-
-
-
-  <!-- end info section -->
 
 
   <!-- footer section -->
   <footer class="footer_section">
     <div class="container">
-      <p>
-        &copy; <span id="displayYear"></span> Všechna práva vyhrazena
-        <a> NetLAB - NetACAD Centrum síťové a informační bezpečnosti FEL CVUT</a>
+      <p data-i18n="copyright">
+        &copy; <span id="displayYear"></span>
+        Všechna práva vyhrazena
+        <a> NetLAB - NetACAD Centrum síťové a informační bezpečnosti FEL ČVUT</a>
       </p>
     </div>
   </footer>
   <!-- footer section -->
 
-  <!-- jQery -->
+  <!-- jQuery -->
   <script src="js/jquery-3.4.1.min.js"></script>
   <!-- bootstrap js -->
   <script src="js/bootstrap.js"></script>
