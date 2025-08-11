@@ -20,11 +20,14 @@
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
   <!-- fonts style -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=OpenSans:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
   <!-- font awesome style -->
-  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- Custom styles for this template -->
   <link href="css/style.css" rel="stylesheet" />
@@ -63,13 +66,13 @@
                               </a>
                           </li>
                           <li class="nav-item">
-                              <a class="nav-link" href="#" data-i18n="courses">
-                                  <i class="https://moodle.netacad.fel.cvut.cz/moodle"></i> Kurzy
+                              <a class="nav-link" href="https://moodle.netacad.fel.cvut.cz/moodle" data-i18n="courses">
+                                  <i class="fas fa-book mr-2"></i> Kurzy
                               </a>
                           </li>
                           <li class="nav-item">
                               <a class="nav-link" href="https://access.netacad.fel.cvut.cz/en/login" data-i18n="profile">
-                                  <i class=""></i> Můj profil
+                                  <i class="fas fa-user mr-2"></i> Můj profil
                               </a>
                           </li>
 
@@ -150,7 +153,7 @@
           <a href="https://access.netacad.fel.cvut.cz/en/login" class="box-link">
             <div class="box">
               <div class="img-box">
-                <i class="fas fa-user-cog fa-2x text-white"></i>
+                <img src="images/user-gear.png" alt="Book Open" class="small-icon">
               </div>
               <div class="detail-box">
                 <h4 data-i18n="registration">Registrace a správa uživatele</h4>
@@ -167,11 +170,11 @@
           <a href="https://access.netacad.fel.cvut.cz/kasmportal" class="box-link">
             <div class="box">
               <div class="img-box">
-                <i class="fas fa-vials fa-2x text-white"></i>
+                <img src="images/vials.png" alt="Book Open" class="small-icon">
               </div>
               <div class="detail-box">
                 <h4 data-i18n="virtualLab">Virtuální <br> laboratoře</h4>
-                <p data-i18n="virtualLab_desc">Přístup k virtuálním laboratořím NetLab jaký link a jaký popis???</p>
+                <p data-i18n="virtualLab_desc">Přístup k virtuálním laboratořím prostřednictvím kasm portal</p>
                 <span class="redirect-link" data-i18n="redirect">
                 Přesměrovat <i class="fa fa-long-arrow-right"></i>
                 </span>
@@ -184,7 +187,7 @@
           <a href="navody.html" class="box-link">
             <div class="box">
               <div class="img-box">
-                <i class="fas fa-book-open fa-2x text-white"></i>
+                <img src="images/book-open.png" alt="Book Open" class="small-icon">
               </div>
               <div class="detail-box">
                 <h4 data-i18n="virtualLabGuide">Návod pro Virtuální laboratoře</h4>
@@ -218,7 +221,7 @@
           <a href="https://discord.gg/mCXzd8gn" class="box-link">
             <div class="box">
               <div class="img-box">
-                <i class="fab fa-discord fa-2x text-white"></i>
+                <img src="images/discord.png" alt="Discord" class="small-icon">
               </div>
               <div class="detail-box">
                 <h4 data-i18n="discord">Discord</h4>
@@ -235,7 +238,7 @@
           <a href="https://netacad.fel.cvut.cz" class="box-link">
             <div class="box">
               <div class="img-box">
-                <i class="fas fa-globe fa-2x text-white"></i>
+                <img src="images/globe.png" alt="Discord" class="small-icon">
               </div>
               <div class="detail-box">
                 <h4 data-i18n="mainPage">Hlavní stránka</h4>

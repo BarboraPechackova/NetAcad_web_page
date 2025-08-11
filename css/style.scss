@@ -24,12 +24,29 @@ $gradient-danger: linear-gradient(135deg, #e9546d, #bd246e);
   transition: all .3s;
 
   &:hover {
+    color: $white;
     background-position: right center;
-    box-shadow: 0 12px 40px rgba($col1, 0.6); // <- stronger glow
+    box-shadow: 0 12px 40px rgba($col1, 0.6);
     transform: translateY(-4px);
   }
 }
 
+
+@mixin hero_btn_smallshadow($gradient, $col1, $pad1, $pad2, $bRadius) {
+  display: inline-block;
+  padding: $pad1 $pad2;
+  background: $gradient;
+  color: $white;
+  border-radius: $bRadius;
+  transition: all .3s;
+
+  &:hover {
+    color: $white;
+    background-position: right center;
+    box-shadow: 0 6px 18px rgba($col1, 0.4); /* menší rozmazání a průhlednost */
+    transform: translateY(-3px);
+  }
+}
 
 @mixin upperBold {
   text-transform: uppercase;
@@ -196,6 +213,7 @@ a:focus {
         color: $white;
         text-align: center;
         text-transform: uppercase;
+
         &:hover {
           color: $primary1 !important;
         }
@@ -501,8 +519,8 @@ a:focus {
     }
 
     a {
-      @include hero_btn($primary2, $white, 10px, 45px, 5px);
-      margin-top: 15px;
+      //@include hero_btn($primary2, $white, 10px, 45px, 5px);
+      //margin-top: 15px;
     }
   }
 }
@@ -723,8 +741,8 @@ a:focus {
 
   .detail-box {
     a {
-      @include hero_btn($primary2, $white, 10px, 45px, 5px);
-      margin-top: 25px;
+      //@include hero_btn($primary2, $white, 10px, 45px, 5px);
+      //margin-top: 25px;
     }
   }
 }
@@ -786,8 +804,8 @@ span.redirect-link {
 
 
         a {
-          @include hero_btn($primary2, $white, 10px, 35px, 5px);
-          border: none;
+          //@include hero_btn($primary2, $white, 10px, 35px, 5px);
+          //border: none;
 
           &:hover {
             background-color: $primary1;
@@ -945,7 +963,7 @@ span.redirect-link {
     button {
       border: none;
       text-transform: uppercase;
-      @include hero_btn($primary2, $white, 15px, 65px, 0);
+      //@include hero_btn($primary2, $white, 15px, 65px, 0);
       font-weight: bold;
     }
   }
@@ -1047,7 +1065,7 @@ span.redirect-link {
     button {
       width: 100%;
       text-align: center;
-      @include hero_btn($primary2, $white, 10px, 55px, 0);
+      //@include hero_btn($primary2, $white, 10px, 55px, 0);
       margin-top: 15px;
     }
   }
@@ -1075,3 +1093,92 @@ span.redirect-link {
 }
 
 // end footer section
+
+
+
+.btn-1 {
+  @include hero_btn($gradient-danger, $primary2, 10px, 15px, 5px);
+}
+
+.btn-2 {
+  @include hero_btn($gradient-primary, $primary1, 10px, 15px, 5px);
+}
+
+.btn-1-ss {
+  @include hero_btn_smallshadow($gradient-danger, $primary2, 10px, 15px, 5px);
+}
+
+
+.about_section {
+  .row {
+    align-items: stretch; /* místo center */
+  }
+
+  .sticky-aside {
+    margin-left: 4em;
+    position: sticky;
+    top: 90px; /* doladíš podle výšky hlavičky */
+  }
+
+  .sticky-aside img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* bezpečné chování na mobilech */
+@media (max-width: 767.98px) {
+  .about_section .sticky-aside { position: static; top: auto; }
+}
+
+
+
+/* --- Video block tidy layout --- */
+.about_section .detail-box .video-block {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.about_section .detail-box .video-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;      /* drží 16:9, žádné skrolování */
+  background: #000;          /* hezké pozadí při načítání */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 28px rgba(0,0,0,.18);
+}
+
+.about_section .detail-box .video-frame video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;         /* žádné černé pruhy při různých zdrojích */
+  display: block;
+  outline: none;
+}
+
+/* popisek pod videem */
+.about_section .detail-box .video-caption {
+  margin: .75rem 0 0;
+  font-size: .95rem;
+  color: #666;
+}
+
+/* zarovnání mezer kolem nadpisu a bloků okolo */
+.about_section .detail-box h3 + .video-block {
+  margin-top: .75rem;        /* zjemní mezeru po H3 */
+}
+
+/* volitelné: větší odsazení okolních sekcí na desktopu */
+@media (min-width: 992px) {
+  .about_section .detail-box .video-block { margin-bottom: 2rem; }
+}
+
+
+img.small-icon {
+  width: 65% !important;
+}
+

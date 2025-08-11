@@ -298,6 +298,7 @@ a:focus {
   transition: all 0.3s;
 }
 .slider_section .detail-box .btn-1:hover {
+  color: #ffffff;
   background-position: right center;
   box-shadow: 0 12px 40px rgba(255, 70, 70, 0.6);
   transform: translateY(-4px);
@@ -311,6 +312,7 @@ a:focus {
   transition: all 0.3s;
 }
 .slider_section .detail-box .btn-2:hover {
+  color: #ffffff;
   background-position: right center;
   box-shadow: 0 12px 40px rgba(3, 167, 211, 0.6);
   transform: translateY(-4px);
@@ -388,21 +390,6 @@ a:focus {
   color: #999;
   margin-top: 15px;
 }
-.about_section .detail-box a {
-  display: inline-block;
-  padding: 10px 45px;
-  background: #ff4646;
-  color: #ffffff;
-  border-radius: 5px;
-  transition: all 0.3s;
-  margin-top: 15px;
-}
-.about_section .detail-box a:hover {
-  background-position: right center;
-  box-shadow: 0 12px 40px rgba(255, 255, 255, 0.6);
-  transform: translateY(-4px);
-}
-
 .service_section .box {
   margin-top: 45px;
   display: flex;
@@ -571,21 +558,6 @@ a:focus {
   transform: rotate(8deg) scale(1.05);
   color: white;
 }
-.server_section .detail-box a {
-  display: inline-block;
-  padding: 10px 45px;
-  background: #ff4646;
-  color: #ffffff;
-  border-radius: 5px;
-  transition: all 0.3s;
-  margin-top: 25px;
-}
-.server_section .detail-box a:hover {
-  background-position: right center;
-  box-shadow: 0 12px 40px rgba(255, 255, 255, 0.6);
-  transform: translateY(-4px);
-}
-
 span.redirect-link {
   color: #03a7d3 !important;
 }
@@ -627,20 +599,6 @@ span.redirect-link {
 }
 .price_section .price_container .box .btn-box {
   margin-top: 25px;
-}
-.price_section .price_container .box .btn-box a {
-  display: inline-block;
-  padding: 10px 35px;
-  background: #ff4646;
-  color: #ffffff;
-  border-radius: 5px;
-  transition: all 0.3s;
-  border: none;
-}
-.price_section .price_container .box .btn-box a:hover {
-  background-position: right center;
-  box-shadow: 0 12px 40px rgba(255, 255, 255, 0.6);
-  transform: translateY(-4px);
 }
 .price_section .price_container .box .btn-box a:hover {
   background-color: #03a7d3;
@@ -759,18 +717,7 @@ span.redirect-link {
 .contact_section .form_container button {
   border: none;
   text-transform: uppercase;
-  display: inline-block;
-  padding: 15px 65px;
-  background: #ff4646;
-  color: #ffffff;
-  border-radius: 0;
-  transition: all 0.3s;
   font-weight: bold;
-}
-.contact_section .form_container button:hover {
-  background-position: right center;
-  box-shadow: 0 12px 40px rgba(255, 255, 255, 0.6);
-  transform: translateY(-4px);
 }
 
 /* info section */
@@ -844,18 +791,7 @@ span.redirect-link {
 .info_section form button {
   width: 100%;
   text-align: center;
-  display: inline-block;
-  padding: 10px 55px;
-  background: #ff4646;
-  color: #ffffff;
-  border-radius: 0;
-  transition: all 0.3s;
   margin-top: 15px;
-}
-.info_section form button:hover {
-  background-position: right center;
-  box-shadow: 0 12px 40px rgba(255, 255, 255, 0.6);
-  transform: translateY(-4px);
 }
 
 /* end info section */
@@ -872,6 +808,120 @@ span.redirect-link {
 }
 .footer_section p a {
   color: inherit;
+}
+
+.btn-1 {
+  display: inline-block;
+  padding: 10px 15px;
+  background: linear-gradient(135deg, #e9546d, #bd246e);
+  color: #ffffff;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+.btn-1:hover {
+  color: #ffffff;
+  background-position: right center;
+  box-shadow: 0 12px 40px rgba(255, 70, 70, 0.6);
+  transform: translateY(-4px);
+}
+
+.btn-2 {
+  display: inline-block;
+  padding: 10px 15px;
+  background: linear-gradient(135deg, #01a0d1, #102b79);
+  color: #ffffff;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+.btn-2:hover {
+  color: #ffffff;
+  background-position: right center;
+  box-shadow: 0 12px 40px rgba(3, 167, 211, 0.6);
+  transform: translateY(-4px);
+}
+
+.btn-1-ss {
+  display: inline-block;
+  padding: 10px 15px;
+  background: linear-gradient(135deg, #e9546d, #bd246e);
+  color: #ffffff;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+.btn-1-ss:hover {
+  color: #ffffff;
+  background-position: right center;
+  box-shadow: 0 6px 18px rgba(255, 70, 70, 0.4); /* menší rozmazání a průhlednost */
+  transform: translateY(-3px);
+}
+
+.about_section .row {
+  align-items: stretch; /* místo center */
+}
+.about_section .sticky-aside {
+  margin-left: 4em;
+  position: sticky;
+  top: 90px; /* doladíš podle výšky hlavičky */
+}
+.about_section .sticky-aside img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* bezpečné chování na mobilech */
+@media (max-width: 767.98px) {
+  .about_section .sticky-aside {
+    position: static;
+    top: auto;
+  }
+}
+/* --- Video block tidy layout --- */
+.about_section .detail-box .video-block {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.about_section .detail-box .video-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9; /* drží 16:9, žádné skrolování */
+  background: #000; /* hezké pozadí při načítání */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
+}
+
+.about_section .detail-box .video-frame video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* žádné černé pruhy při různých zdrojích */
+  display: block;
+  outline: none;
+}
+
+/* popisek pod videem */
+.about_section .detail-box .video-caption {
+  margin: 0.75rem 0 0;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+/* zarovnání mezer kolem nadpisu a bloků okolo */
+.about_section .detail-box h3 + .video-block {
+  margin-top: 0.75rem; /* zjemní mezeru po H3 */
+}
+
+/* volitelné: větší odsazení okolních sekcí na desktopu */
+@media (min-width: 992px) {
+  .about_section .detail-box .video-block {
+    margin-bottom: 2rem;
+  }
+}
+img.small-icon {
+  width: 65% !important;
 }
 
 /*# sourceMappingURL=style.css.map */

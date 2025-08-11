@@ -20,11 +20,14 @@
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
   <!-- fonts style -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=OpenSans:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
   <!-- font awesome style -->
-  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- Custom styles for this template -->
   <link href="css/style.css" rel="stylesheet" />
@@ -42,25 +45,46 @@
     <!-- header section strats -->
     <header class="header_section">
       <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg custom_nav-container ">
-          <a class="navbar-brand" href="https://lab.netacad.fel.cvut.cz/">
-            <span>NetLab 101 - návod pro práci v prostředí</span>
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand d-flex align-items-center">
+            <img src="favicon.ico" alt="Logo" width="28" height="28" class="mr-2"> <span>NetAcad</span>
           </a>
 
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class=""> </span>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+                  aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
           </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav  ml-auto">
-              <li class="nav-item ">
-                <a class="nav-link" href="index.html">Hlavní stránka <span class="sr-only">(current)</span></a>
-              </li>
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav ml-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="navody.html"> Návody</a>
+                <a class="nav-link" href="index.html" data-i18n="home">
+                  <i class="fas fa-home mr-2"></i> Domů
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://moodle.netacad.fel.cvut.cz/moodle" data-i18n="courses">
+                  <i class="fas fa-book mr-2"></i> Kurzy
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://access.netacad.fel.cvut.cz/en/login" data-i18n="profile">
+                  <i class="fas fa-user mr-2"></i> Můj profil
+                </a>
               </li>
 
+              <li class="nav-item">
+                <a class="nav-link" href="mailto:support@itu.fel.cvut.cz" data-i18n="support">
+                  <i class="fas fa-headset mr-2"></i> Podpora
+                </a>
+              </li>
             </ul>
+
+            <div class="language-switcher ml-3 d-flex justify-content-center ">
+              <button class="btn btn-sm btn-outline-light" onclick="setLanguage('cz')">CZ</button>
+              <button class="btn btn-sm btn-outline-light" onclick="setLanguage('en')">EN</button>
+            </div>
+
 
           </div>
         </nav>
@@ -92,7 +116,7 @@
               K čemu slouží založení uživatelského účtu?
             </h3>
             <p>
-              Abyste mohli využívat všechny služby, které poskytujeme a které jsou navzájem propojené je potřeba u nás mít univerzální účet. Ten slouží k přihlášení do Moodlu, vzdáleného počítač, VPN, Registraci Podu.
+              Abyste mohli využívat všechny služby, které poskytujeme a které jsou navzájem propojené je potřeba u nás mít univerzální účet. Ten slouží k přihlášení do Moodlu, vzdáleného počítač, VPN a registraci Podu.
               Na registraci váš odkáže někdo z našeho týmu, či ji dostanete skrze email.
             </p>
             <p>
@@ -106,40 +130,40 @@
               Přes tento portál probíhá vytvoření uživatelského účtu a jeho správa. Lze zde také jednoduše změnit heslo.
 
             </p>
-            <p class="mt-0 mb-4">
-              <a href="https://access.netacad.fel.cvut.cz/nlam"> NLAM </a>
-            </p>
+            <div class="mt-4 mb-4">
+              <a class="btn-1-ss" href="https://access.netacad.fel.cvut.cz/nlam"> NLAM </a>
+            </div>
 
             <h3>
               Jak se dostanu na portál virtuálních desktopů?
             </h3>
 
             <p class="mb-0">
-              Abyste mohli používat naši platformu je potřeba se připojit k vzdálenému počítači skrze naše prostředí.
+              Abyste mohli používat naši platformu je potřeba se připojit k vzdálenému počítači skrze naše prostředí KASM Portal.
             </p>
-            <p class="mt-0">
-              <a href="https://access.netacad.fel.cvut.cz/kasmportal"> KASM Portal </a>
-              <a href="https://moodle.netacad.fel.cvut.cz/moodle"> Moodle NetLAB </a>
-            </p>
+            <div class="mt-4 mb-4">
+              <a class="btn-1-ss mr-3" href="https://access.netacad.fel.cvut.cz/kasmportal"> KASM Portal </a>
+              <a class="btn-1-ss" href="https://moodle.netacad.fel.cvut.cz/moodle"> Moodle NetLAB </a>
+            </div>
             <p>
-              Zde si vyberte jednu z instancí a přihlaste se pomocí údajů vámi vytvořenými. Následně se ocitnete ve výběrovém prostředí. Jednu z instancí si vyberte a s výběrem aktuální záložka klikněte na spustit relaci. V případě že ji chcete spustit v jiném okně můžete výběrem jiné možnosti.
+              Zde si vyberte jednu z instancí a přihlaste se pomocí údajů vámi vytvořenými. Následně se ocitnete ve výběrovém prostředí. Jednu z instancí si vyberte a s výběrem aktuální záložka klikněte na spustit relaci. V případě že ji chcete spustit v jiném okně můžete tak učinit výběrem jiné možnosti.
             </p>
 
-            <h3 class="mb-0">
-              Videonávod
-            </h3>
+            <h3 class="mt-4">Videonávod</h3>
 
-            <video  width="850" height="650" controls src="video/UTF-8Tutorial.mp4" type="video/mp4">
-              ERROR: Your browser does not support the video tag. :(
-            </video>
+            <div class="video-block">
+              <div class="video-frame">
+                <video controls src="video/UTF-8Tutorial.mp4" type="video/mp4"></video>
+              </div>
+              <p class="video-caption">
+                Pro získání kompletního návodu kontaktujte podporu
+              </p>
+            </div>
 
-            <a href="">
-              Pro získání kompletního návodu kontaktujte podporu
-            </a>
           </div>
         </div>
-        <div class="col-md-6 ">
-          <div class="img-box">
+        <div class="col-md-6 d-none d-md-block">
+          <div class="img-box sticky-aside">
             <img src="images/about-img.png" alt="">
           </div>
         </div>
@@ -157,16 +181,16 @@
   <!-- footer section -->
   <footer class="footer_section">
     <div class="container">
-      <p>
-        &copy; <span id="displayYear"></span> Všechna práva vyhrazena
-        <a> NetLAB - NetACAD Centrum síťové a informační bezpečnosti FEL CVUT</a>
+      <p data-i18n="copyright">
+        &copy; <span id="displayYear"></span>
+        Všechna práva vyhrazena
+        <a> NetLAB - NetACAD Centrum síťové a informační bezpečnosti FEL ČVUT</a>
       </p>
     </div>
   </footer>
-
   <!-- footer section -->
 
-  <!-- jQery -->
+  <!-- jQuery -->
   <script src="js/jquery-3.4.1.min.js"></script>
   <!-- bootstrap js -->
   <script src="js/bootstrap.js"></script>
