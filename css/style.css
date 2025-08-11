@@ -924,4 +924,95 @@ img.small-icon {
   width: 65% !important;
 }
 
+/* Layout helpers */
+.container--narrow {
+  max-width: 720px; /* readable measure */
+}
+
+.flow > * + * {
+  margin-top: 1rem;
+}
+
+@media (min-width: 992px) {
+  .flow > * + * {
+    margin-top: 1.25rem;
+  }
+}
+.btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px; /* even spacing between buttons */
+}
+
+/* Headings rhythm (optional, smoother spacing) */
+.detail-box h2 {
+  margin-bottom: 0.5rem;
+}
+
+.detail-box h3 {
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+/* Sticky image: smaller, pushed right, card look */
+.about_section .sticky-aside {
+  position: sticky;
+  top: 90px;
+  width: 85%;
+  margin-left: auto;
+  transform: translateX(16px);
+}
+
+.card-aside {
+  overflow: hidden;
+}
+
+.card-aside img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Keep rows same height so sticky can actually stick */
+.about_section .row {
+  align-items: stretch;
+}
+
+/* Video block: already good from your last pass */
+.about_section .detail-box .video-block {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.about_section .detail-box .video-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  background: #000;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
+}
+
+.about_section .detail-box .video-frame video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Mobile fallbacks */
+@media (max-width: 991.98px) {
+  .about_section .sticky-aside {
+    position: static;
+    transform: none;
+    width: 100%;
+    margin-left: 0;
+  }
+  .container--narrow {
+    max-width: 100%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
