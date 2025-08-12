@@ -69,7 +69,7 @@ body {
   top: 50%;
   width: 3px;
   height: 90px;
-  background-color: #03a7d3;
+  background-color: #05aedb;
   transform: translateY(-50%);
 }
 .container_border_style::before {
@@ -126,7 +126,7 @@ a:focus {
 }
 .custom_nav-container .navbar-nav .nav-item {
   transition: transform 0.3s ease, color 0.4s ease, text-shadow 0.4s ease;
-  text-shadow: 0 0 0 rgba(3, 167, 211, 0);
+  text-shadow: 0 0 0 rgba(5, 174, 219, 0);
   transform: translateY(0);
 }
 .custom_nav-container .navbar-nav .nav-item .nav-link {
@@ -137,11 +137,11 @@ a:focus {
   text-transform: uppercase;
 }
 .custom_nav-container .navbar-nav .nav-item .nav-link:hover {
-  color: #03a7d3 !important;
+  color: #05aedb !important;
 }
 .custom_nav-container .navbar-nav .nav-item:hover {
-  color: #03a7d3 !important;
-  text-shadow: 0 0 8px rgba(3, 167, 211, 0.8), 0 0 16px rgba(3, 167, 211, 0.5);
+  color: #05aedb !important;
+  text-shadow: 0 0 8px rgba(5, 174, 219, 0.8), 0 0 16px rgba(5, 174, 219, 0.5);
   transform: translateY(-3px);
 }
 
@@ -156,7 +156,7 @@ a:focus {
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
-  text-shadow: 0 0 0 rgba(3, 167, 211, 0);
+  text-shadow: 0 0 0 rgba(5, 174, 219, 0);
 }
 .language-switcher button.active {
   background: linear-gradient(135deg, #01a0d1, #102b79);
@@ -165,9 +165,9 @@ a:focus {
 }
 .language-switcher button:hover {
   background-color: transparent;
-  color: #03a7d3;
+  color: #05aedb;
   transform: translateY(-2px);
-  text-shadow: 0 0 6px rgba(3, 167, 211, 0.4), 0 0 12px rgba(3, 167, 211, 0.2);
+  text-shadow: 0 0 6px rgba(5, 174, 219, 0.4), 0 0 12px rgba(5, 174, 219, 0.2);
 }
 
 .custom_nav-container .nav_search-btn {
@@ -278,7 +278,7 @@ a:focus {
 }
 .slider_section .detail-box h1 span {
   font-size: 3rem;
-  color: #03a7d3;
+  color: #05aedb;
 }
 .slider_section .detail-box .btn-box {
   display: flex;
@@ -314,7 +314,7 @@ a:focus {
 .slider_section .detail-box .btn-2:hover {
   color: #ffffff;
   background-position: right center;
-  box-shadow: 0 12px 40px rgba(3, 167, 211, 0.6);
+  box-shadow: 0 12px 40px rgba(5, 174, 219, 0.6);
   transform: translateY(-4px);
 }
 .slider_section .img-box img {
@@ -353,7 +353,7 @@ a:focus {
   left: 50%;
   transform: translateX(-50%);
   font-size: 2.5rem;
-  color: #03a7d3;
+  color: #05aedb;
   transition: transform 0.3s ease, color 0.3s ease;
   z-index: 10;
   animation: bounce 2s infinite;
@@ -362,7 +362,7 @@ a:focus {
   transition: transform 0.3s;
 }
 .scroll-down-arrow:hover {
-  color: rgb(13.4345794393, 201.191588785, 251.5654205607);
+  color: rgb(25.2455357143, 202.5446428571, 249.7544642857);
   transform: translateX(-50%) translateY(-4px);
 }
 .scroll-down-arrow:hover i {
@@ -445,17 +445,17 @@ a:focus {
   color: #000000;
 }
 .service_section .box .detail-box a {
-  color: #03a7d3 !important;
+  color: #05aedb !important;
   font-weight: 500;
   text-decoration: none;
   transition: color 0.3s;
 }
 .service_section .box .detail-box a:hover {
-  color: rgb(2.285046729, 127.2009345794, 160.714953271);
+  color: rgb(3.8616071429, 134.3839285714, 169.1383928571);
 }
 .service_section .box:hover {
   transform: translateY(-8px);
-  box-shadow: 0 16px 40px rgba(3, 167, 211, 0.3);
+  box-shadow: 0 16px 40px rgba(5, 174, 219, 0.3);
 }
 .service_section .box:hover .img-box {
   transform: scale(1.05);
@@ -559,7 +559,7 @@ a:focus {
   color: white;
 }
 span.redirect-link {
-  color: #03a7d3 !important;
+  color: #05aedb !important;
 }
 
 .price_section .price_container {
@@ -586,7 +586,7 @@ span.redirect-link {
 }
 .price_section .price_container .box .detail-box h6 {
   text-transform: uppercase;
-  color: #03a7d3;
+  color: #05aedb;
   font-size: 20px;
   margin-bottom: 10px;
 }
@@ -601,20 +601,20 @@ span.redirect-link {
   margin-top: 25px;
 }
 .price_section .price_container .box .btn-box a:hover {
-  background-color: #03a7d3;
+  background-color: #05aedb;
   color: #ffffff;
 }
 .price_section .price_container .box:hover {
   color: #ffffff;
 }
 .price_section .price_container .box:hover .detail-box {
-  background-color: #03a7d3;
+  background-color: #05aedb;
 }
 .price_section .price_container .box:hover h6 {
   color: #ffffff;
 }
 .price_section .price_container .box:hover a {
-  background-color: #03a7d3;
+  background-color: #05aedb;
   color: #ffffff;
 }
 
@@ -647,7 +647,7 @@ span.redirect-link {
 }
 .client_section .box .client_info .client_name h5 {
   font-weight: bold;
-  color: #03a7d3;
+  color: #05aedb;
   margin-bottom: 0;
   text-transform: uppercase;
 }
@@ -660,7 +660,7 @@ span.redirect-link {
 }
 .client_section .box .client_info i {
   font-size: 24px;
-  color: #03a7d3;
+  color: #05aedb;
 }
 .client_section .box p {
   margin-top: 25px;
@@ -674,7 +674,7 @@ span.redirect-link {
 .client_section .carousel-control-next {
   width: 50px;
   height: 50px;
-  background-color: #03a7d3;
+  background-color: #05aedb;
   opacity: 1;
   font-size: 28px;
   font-weight: bold;
@@ -836,7 +836,7 @@ span.redirect-link {
 .btn-2:hover {
   color: #ffffff;
   background-position: right center;
-  box-shadow: 0 12px 40px rgba(3, 167, 211, 0.6);
+  box-shadow: 0 12px 40px rgba(5, 174, 219, 0.6);
   transform: translateY(-4px);
 }
 
@@ -1013,6 +1013,123 @@ img.small-icon {
   .container--narrow {
     max-width: 100%;
   }
+}
+.footer_section {
+  background: #020230;
+  color: #ffffff;
+  padding: 36px 0 28px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+.footer_section .container {
+  max-width: 1140px;
+}
+.footer_section .footer-inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  align-items: start;
+  padding-bottom: 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  margin: 0 2em;
+  text-align: left;
+}
+@media (min-width: 768px) {
+  .footer_section .footer-inner {
+    grid-template-columns: 1.2fr 0.8fr; /* brand / address */
+    gap: 32px;
+    margin: 0;
+  }
+}
+.footer_section .footer-col {
+  min-width: 0;
+}
+.footer_section .footer-brand .brand-row {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  margin-bottom: 8px;
+}
+.footer_section .footer-brand .brand-row span {
+  font-size: 18px;
+}
+.footer_section .footer-brand .brand-row img {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.25));
+}
+.footer_section .footer-brand .footer-copy {
+  margin: 0;
+  line-height: 1.55;
+  opacity: 0.9;
+}
+.footer_section .footer-brand .footer-copy .footer-link {
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.35);
+  transition: color 0.25s, border-color 0.25s;
+}
+.footer_section .footer-brand .footer-copy .footer-link:hover {
+  color: #05aedb;
+  border-color: transparent;
+}
+.footer_section .footer-address {
+  text-align: left;
+}
+@media (min-width: 768px) {
+  .footer_section .footer-address {
+    text-align: right;
+  }
+}
+.footer_section .footer-address .footer-title {
+  margin: 0 0 6px 0;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  opacity: 0.8;
+}
+.footer_section .footer-address p {
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+}
+.footer_section .footer-address p i {
+  width: 1.1em;
+  text-align: center;
+  opacity: 0.9;
+}
+.footer_section .footer-meta {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  padding-top: 16px;
+}
+.footer_section .footer-meta .footer-meta-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.06);
+  color: #ffffff;
+  font-size: 18px;
+  transition: transform 0.2s, box-shadow 0.25s, background 0.25s, color 0.25s;
+}
+.footer_section .footer-meta .footer-meta-link:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: #05aedb;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+/* Visually hidden (for screen reader text above) */
+.sr-only {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

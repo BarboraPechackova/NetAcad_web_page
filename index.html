@@ -71,6 +71,11 @@
                               </a>
                           </li>
                           <li class="nav-item">
+                              <a class="nav-link" href="https://access.netacad.fel.cvut.cz/kasmportal" data-i18n="labs">
+                                  <i class="fas fa-vials mr-2"></i> Laboratoře
+                              </a>
+                          </li>
+                          <li class="nav-item">
                               <a class="nav-link" href="https://access.netacad.fel.cvut.cz/en/login" data-i18n="profile">
                                   <i class="fas fa-user mr-2"></i> Můj profil
                               </a>
@@ -259,16 +264,50 @@
 
 
   <!-- footer section -->
+  <!-- footer section -->
   <footer class="footer_section">
     <div class="container">
-      <p data-i18n="copyright">
-        &copy; <span id="displayYear"></span>
-        Všechna práva vyhrazena
-        <a> NetLAB - NetACAD Centrum síťové a informační bezpečnosti FEL ČVUT</a>
-      </p>
+      <div class="footer-inner">
+        <!-- Brand / Copyright -->
+        <div class="footer-col footer-brand">
+          <div class="brand-row">
+            <img src="favicon.ico" alt="NetAcad" width="28" height="28" class="mr-2">
+            <span>NetAcad</span>
+          </div>
+
+          <p class="footer-copy text-left" data-i18n="copyright">
+            &copy; <span id="displayYear"></span>
+            Všechna práva vyhrazena
+            <a href="#" class="footer-link">NetLAB – NetACAD Centrum síťové a informační bezpečnosti FEL ČVUT</a>
+          </p>
+        </div>
+
+        <!-- Address -->
+        <div class="footer-col footer-address">
+          <h6 class="footer-title" data-i18n="footer_title_location">Kde nás najdete</h6>
+          <p class="mt-3 mb-0 pb-0" data-i18n="address_line1">
+            <i class="fas fa-chalkboard-teacher "></i> Místnost č. 505, blok 4A, 5. patro
+          </p>
+          <p class="mb-0 mt-0 pt-0" data-i18n="address_line2">
+            <i class="fas fa-university "></i> Technická 2, 166 27 Praha 6 – Dejvice
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-meta">
+        <!-- Optional quick contacts / socials -->
+        <a class="footer-meta-link" href="mailto:support@itu.fel.cvut.cz">
+          <i class="fas fa-envelope"></i> <span class="sr-only">Email</span>
+        </a>
+        <a class="footer-meta-link" href="https://discord.gg/mCXzd8gn">
+          <i class="fab fa-discord"></i> <span class="sr-only">Discord</span>
+        </a>
+        <a class="footer-meta-link" href="https://netacad.fel.cvut.cz">
+          <i class="fas fa-globe"></i> <span class="sr-only">Web</span>
+        </a>
+      </div>
     </div>
   </footer>
-  <!-- footer section -->
 
   <!-- jQuery -->
   <script src="js/jquery-3.4.1.min.js"></script>

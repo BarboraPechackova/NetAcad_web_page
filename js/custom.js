@@ -2,6 +2,7 @@ const translations = {
     cz: {
         home: "<i class=\"fas fa-home mr-2\"></i> Domů",
         courses: "<i class=\"fas fa-book mr-2\"></i> Kurzy",
+        labs: "<i class=\"fas fa-flask mr-2\"></i> Laboratoře",
         profile: "<i class=\"fas fa-user mr-2\"></i> Můj profil",
         support: "<i class=\"fas fa-headset mr-2\"></i> Podpora",
         title: "NetAcad <br> FEL ČVUT",
@@ -22,11 +23,15 @@ const translations = {
         mainPage: "Hlavní stránka",
         mainPage_desc: "Hlavní stránka NetAcad s informacemi o kurzech a aktivitách",
         redirect: "Přesměrovat <i class=\"fa fa-long-arrow-right\"></i>",
-        copyright: "&copy; <span id=\"displayYear\"></span> Všechna práva vyhrazena <a> NetLAB - NetACAD Centrum síťové a informační bezpečnosti FEL ČVUT</a>"
+        copyright: "&copy; <span id=\"displayYear\"></span> Všechna práva vyhrazena <br> <a> NetLAB - NetACAD Centrum síťové a informační bezpečnosti FEL ČVUT</a>",
+        footer_title_location: "Kde nás najdete",
+        address_line1: '<i class="fas fa-chalkboard-teacher mr-1"></i> Místnost č. 505, blok 4A, 5. patro',
+        address_line2: '<i class="fas fa-university mr-1"></i> Technická 2, 166 27 Praha 6 – Dejvice'
     },
     en: {
         home: "<i class=\"fas fa-home mr-2\"></i> Home",
         courses: "<i class=\"fas fa-book mr-2\"></i> Courses",
+        labs: "<i class=\"fas fa-flask mr-2\"></i> Labs",
         profile: "<i class=\"fas fa-user mr-2\"></i> My Profile",
         support: "<i class=\"fas fa-headset mr-2\"></i> Support",
         title: "NetAcad <br> CTU FEE",
@@ -47,7 +52,10 @@ const translations = {
         mainPage: "Main Page",
         mainPage_desc: "Main NetAcad page with information about courses and activities",
         redirect: "Redirect <i class=\"fa fa-long-arrow-right\"></i>",
-        copyright: "&copy; <span id=\"displayYear\"></span> All rights reserved <a> NetLAB - NetACAD Center for Network and Information Security at CTU FEE</a>"
+        copyright: "&copy; <span id=\"displayYear\"></span> All rights reserved <br> <a> NetLAB - NetACAD Center for Network and Information Security at CTU FEE</a>",
+        footer_title_location: "Where to find us",
+        address_line1: '<i class="fas fa-chalkboard-teacher mr-1"></i> Room 505, Block 4A, 5th Floor',
+        address_line2: '<i class="fas fa-university mr-1"></i> Technická 2, 166 27 Prague 6 – Dejvice'
     }
 };
 
