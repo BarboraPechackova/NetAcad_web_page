@@ -876,7 +876,6 @@ span.redirect-link {
     top: auto;
   }
 }
-/* --- Video block tidy layout --- */
 .about_section .detail-box .video-block {
   margin-top: 1rem;
   margin-bottom: 1.5rem;
@@ -885,36 +884,43 @@ span.redirect-link {
 .about_section .detail-box .video-frame {
   position: relative;
   width: 100%;
-  aspect-ratio: 16/9; /* drží 16:9, žádné skrolování */
-  background: #000; /* hezké pozadí při načítání */
+  aspect-ratio: 16/9;
+  background: #000;
   border-radius: 12px;
-  overflow: hidden;
+  overflow: hidden; /* keeps rounded corners on the media */
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
+  line-height: 0; /* kills baseline gap under iframe */
 }
 
-.about_section .detail-box .video-frame video {
+/* Make iframe/video fill the frame exactly */
+.about_section .detail-box .video-frame > iframe,
+.about_section .detail-box .video-frame > video {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* žádné černé pruhy při různých zdrojích */
   display: block;
-  outline: none;
+  border: 0;
 }
 
-/* popisek pod videem */
+/* For self-hosted <video>, show whole picture (no cropping) */
+.about_section .detail-box .video-frame > video {
+  object-fit: contain; /* avoid cropping (cover was cutting edges) */
+  background: #000; /* any letterbox is black, symmetric */
+}
+
+/* Caption */
 .about_section .detail-box .video-caption {
   margin: 0.75rem 0 0;
   font-size: 0.95rem;
   color: #666;
 }
 
-/* zarovnání mezer kolem nadpisu a bloků okolo */
+/* Nice spacing after H3 */
 .about_section .detail-box h3 + .video-block {
-  margin-top: 0.75rem; /* zjemní mezeru po H3 */
+  margin-top: 0.75rem;
 }
 
-/* volitelné: větší odsazení okolních sekcí na desktopu */
 @media (min-width: 992px) {
   .about_section .detail-box .video-block {
     margin-bottom: 2rem;
