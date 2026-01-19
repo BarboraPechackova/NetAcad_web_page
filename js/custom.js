@@ -87,7 +87,10 @@ const translations = {
         faq_moodle_title: "Nemohu najít svůj kurz na moodle",
         faq_moodle_body: "Každý kurz má svoje ID, které je jedinečné. Na začátku kurzu Vám je zaslán odkaz na konkrétní kurz a na něm lze vždy kurz najít. Po zapsání kurzu uvidíte kurz na hlavní stránce.",
 
-        videoTutorialUrl: "https://www.youtube.com/embed/ezX9qFVlemg"
+        videoTutorialUrl: "https://www.youtube.com/embed/ezX9qFVlemg",
+        loginPage: "https://access.netacad.fel.cvut.cz/cs/login",
+        moodleLogin: "https://moodle.netacad.fel.cvut.cz/moodle/",
+        kasmportalLink: "https://access.netacad.fel.cvut.cz/kasmportal/cs"
     },
     en: {
         home: "<i class=\"fas fa-home mr-2\"></i> Home",
@@ -176,7 +179,10 @@ const translations = {
         faq_moodle_title: "I can’t find my course on Moodle",
         faq_moodle_body: "Each course has its own unique ID. At the start of the course you receive a link to the specific course and you can always find it there. After enrolling, you will see the course on the main page.",
 
-        videoTutorialUrl: "https://www.youtube.com/embed/4kjmFlWKU6I"
+        videoTutorialUrl: "https://www.youtube.com/embed/4kjmFlWKU6I",
+        loginPage: "https://access.netacad.fel.cvut.cz/en/login",
+        moodleLogin: "https://moodle.netacad.fel.cvut.cz/moodle/?lang=en",
+        kasmportalLink: "https://access.netacad.fel.cvut.cz/kasmportal/"
     }
 };
 
