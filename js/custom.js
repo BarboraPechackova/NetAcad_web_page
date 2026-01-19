@@ -211,6 +211,19 @@ function applyTranslations() {
         }
     });
 
+    // Attribute translations
+    const attrElements = document.querySelectorAll('[data-i18n-attr]');
+    attrElements.forEach(el => {
+        const attrConfig = el.getAttribute('data-i18n-attr');
+        const pairs = attrConfig.split(',');
+        pairs.forEach(pair => {
+            const [attr, key] = pair.split(':').map(s => s.trim());
+            if (attr && key && translations[lang][key]) {
+                el.setAttribute(attr, translations[lang][key]);
+            }
+        });
+    });
+
     // Set the current year if the element exists
     const displayYearEl = document.querySelector("#displayYear");
     if (displayYearEl) {
