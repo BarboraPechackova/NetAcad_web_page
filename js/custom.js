@@ -85,7 +85,9 @@ const translations = {
         faq_eveImport_body: "Tato chyba je většinou způsobena stejným názvem importovaného labu. V adresáři již úloha se stejným názvem existuje a import neproběhne. Pro nápravu stačí vytvořit novou složku a do ní lab importovat. Následně lze i v případě potřeby lab přejmenovat. Nerozbalujte a neupravujte .zip soubor.",
 
         faq_moodle_title: "Nemohu najít svůj kurz na moodle",
-        faq_moodle_body: "Každý kurz má svoje ID, které je jedinečné. Na začátku kurzu Vám je zaslán odkaz na konkrétní kurz a na něm lze vždy kurz najít. Po zapsání kurzu uvidíte kurz na hlavní stránce."
+        faq_moodle_body: "Každý kurz má svoje ID, které je jedinečné. Na začátku kurzu Vám je zaslán odkaz na konkrétní kurz a na něm lze vždy kurz najít. Po zapsání kurzu uvidíte kurz na hlavní stránce.",
+
+        videoTutorialUrl: "https://www.youtube.com/embed/ezX9qFVlemg"
     },
     en: {
         home: "<i class=\"fas fa-home mr-2\"></i> Home",
@@ -172,7 +174,9 @@ const translations = {
         faq_eveImport_body: "This error is usually caused by the imported lab having the same name as an existing one. The directory already contains a lab with the same name, so the import fails. To fix it, create a new folder and import the lab there. You can rename the lab afterwards if needed. Do not unpack or modify the .zip file.",
 
         faq_moodle_title: "I can’t find my course on Moodle",
-        faq_moodle_body: "Each course has its own unique ID. At the start of the course you receive a link to the specific course and you can always find it there. After enrolling, you will see the course on the main page."
+        faq_moodle_body: "Each course has its own unique ID. At the start of the course you receive a link to the specific course and you can always find it there. After enrolling, you will see the course on the main page.",
+
+        videoTutorialUrl: "https://www.youtube.com/embed/4kjmFlWKU6I"
     }
 };
 
